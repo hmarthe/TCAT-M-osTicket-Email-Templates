@@ -1,0 +1,42 @@
+<!-- Start DIV Wrapper -->
+<div style="
+border:1px solid #AAA;
+border-bottom-left-radius:100px 50px;
+border-bottom-right-radius:100px 50px;
+border-top-left-radius:100px 50px;
+border-top-right-radius:100px 50px;
+-moz-border-bottom-left-radius:100px 50px;
+-moz-border-bottom-right-radius:100px 50px;
+-moz-border-top-left-radius:100px 50px;
+-moz-border-top-right-radius:100px 50px;
+margin-left:auto;
+margin-right:auto;
+width:600px;">
+
+<!-- Header -->
+<div style="margin-top:25px; padding:10px; text-align:center;">
+<img alt="TCAT Murfreesboro" src="http://tcatmurfreesboro.edu/sites/all/themes/ttc/logos/murfreesboro.png" />
+</div>
+
+<!-- osTicket: First Name -->
+<div style="padding:10px;">
+<h2>%{recipient.name.first},</h2>
+</div>
+
+<!-- osTicket: Ticket Number & Ticket Subject -->
+<div style="padding:10px;">
+Your ticket was submitted successfully and your ticket number is <strong>#%{ticket.number}</strong>.  You should receive a response from the CIT department shortly regarding your ticket.  Please keep an eye on your email and ticket in case we need to request additional information from you!
+</div>
+
+<!-- osTicket: Recipient Ticket Link & Alternate Access Link -->
+<div style="padding:10px;">
+You can view your ticket's progress by clicking the following link: <strong><a href="%{recipient.ticket_link}">%{recipient.ticket_link}</a></strong>.<br /><span style="color:#888; font-size:12px; font-style:italic;">Please note that this link will not work outside the TCAT Murfreesboro network.  If you are outside of the TCAT Murfreesboro network, please <a href="http://206.23.102.20/osticket/upload">click here</a> and log into the ticket system to check on your ticket.</span>
+</div>
+
+<!-- Footer -->
+<div style="color:#AAA; font-size:10px; font-weight:bold; margin-bottom:25px; padding:10px; text-align:center;">
+<p>Tennessee College of Applied Technology - Murfreesboro</p>
+</div>
+
+<!-- End DIV Wrapper -->
+</div>
