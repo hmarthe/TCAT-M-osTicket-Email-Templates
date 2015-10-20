@@ -1,0 +1,53 @@
+<!-- Start DIV Wrapper -->
+<div style="
+border:1px solid #AAA;
+border-bottom-left-radius:100px 50px;
+border-bottom-right-radius:100px 50px;
+border-top-left-radius:100px 50px;
+border-top-right-radius:100px 50px;
+-moz-border-bottom-left-radius:100px 50px;
+-moz-border-bottom-right-radius:100px 50px;
+-moz-border-top-left-radius:100px 50px;
+-moz-border-top-right-radius:100px 50px;
+margin-left:auto;
+margin-right:auto;
+width:600px;">
+
+<!-- Header -->
+<div style="margin-top:25px; padding:10px; text-align:center;">
+<img alt="TCAT Murfreesboro" src="http://tcatmurfreesboro.edu/sites/all/themes/ttc/logos/murfreesboro.png" />
+</div>
+
+<!-- osTicket: First Name -->
+<div style="padding:10px;">
+<h2>%{recipient.name.first},</h2>
+</div>
+
+<!-- osTicket: Ticket Number & Ticket Subject -->
+<div style="padding:10px;">
+A ticket was created on your behalf by the CIT department.  The ticket number is <strong><a href="recipient.ticket_link">#%{ticket.number}</a></strong> with the subject <strong>%{ticket.subject}</strong> under the category <strong>%{ticket.topic.name}</strong>.
+</div>
+
+<!-- osTicket: Ticket Message -->
+<div style="padding:10px;">
+
+<blockquote>%{message}</blockquote>
+</div>
+
+<!-- osTicket: Ticket Status -->
+<div style="padding:10px;">
+The current status of this ticket is <strong>%{ticket.status}</strong>.  If needed, a representative will follow-up with you as soon as possible.
+</div>
+
+<!-- osTicket: Recipient Ticket Link & Alternate Access Link -->
+<div style="padding:10px;">
+If you would like to respond to this message, please reply to this email or respond by clicking the following link: <strong><a href="%{recipient.ticket_link}">%{recipient.ticket_link}</a></strong>.<br /><span style="color:#888; font-size:12px; font-style:italic;">Please note that this link will not work outside the TCAT Murfreesboro network.  If you are outside of the TCAT Murfreesboro network, please <a href="http://206.23.102.20/osticket/upload">click here</a> and log into the ticket system to check on your ticket.</span>
+</div>
+
+<!-- Footer -->
+<div style="color:#AAA; font-size:10px; font-weight:bold; margin-bottom:25px; padding:10px; text-align:center;">
+<p>Tennessee College of Applied Technology - Murfreesboro</p>
+</div>
+
+<!-- End DIV Wrapper -->
+</div>
